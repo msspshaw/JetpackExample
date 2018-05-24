@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "735736201542",
+    "firebase_url": "https://jetpackexample-46e2e.firebaseio.com",
+    "project_id": "jetpackexample-46e2e",
+    "storage_bucket": "jetpackexample-46e2e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:735736201542:android:669125d95ade122c",
+        "android_client_info": {
+          "package_name": "shawdevelopment.android.com.jetpackexample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "735736201542-1hrtjoahe9d5pq74o3nqsdsn84sr6iot.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "shawdevelopment.android.com.jetpackexample",
+            "certificate_hash": "2d5688d9ac732ebda08b117e00f6692b2c94d289"
+          }
+        },
+        {
+          "client_id": "735736201542-sllh38n6roslg4vb59mhaipmn9aj2oqa.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "735736201542-sllh38n6roslg4vb59mhaipmn9aj2oqa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6NQU5s7iFIKiIPNi37xLemy2CvXMNIW4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "735736201542-sllh38n6roslg4vb59mhaipmn9aj2oqa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
