@@ -44,6 +44,20 @@ class MainFragment : Fragment(), View.OnClickListener {
         })
         mRegisterButton.setOnClickListener(this)
         mLoginButton.setOnClickListener(this)
+        mFetchGreetingsButton.setOnClickListener(this)
+
+        mViewModel.greetings.observe(this, Observer { data ->
+            hideLoading()
+            if (data!!.size > 0) {
+                val iterate = data?.iterator()
+                var display = ""
+                while (iterate!!.hasNext()) {
+                    display = display + "\n" + iterate.next()
+                }
+                mGreetingsDisplay.visibility = VISIBLE
+                mGreetingsDisplay.setText(display)
+            }
+        })
     }
 
     fun showUserInfo() {
@@ -72,6 +86,7 @@ class MainFragment : Fragment(), View.OnClickListener {
         mStateView.text = "Logged In"
         mEmailEntry.setText(mViewModel.user.value?.email)
         mPasswordEntry.visibility = GONE
+        mFetchGreetingsButton.visibility = VISIBLE
     }
 
     override fun onClick(clickedView: View?) {
@@ -84,7 +99,10 @@ class MainFragment : Fragment(), View.OnClickListener {
                 mViewModel.registerUser(mEmailEntry.text.toString(), mPasswordEntry.text.toString())
                 showLoading()
             }
+            mFetchGreetingsButton -> {
+                mViewModel.fetchGreetings()
+                showLoading()
+            }
         }
     }
-
 }
